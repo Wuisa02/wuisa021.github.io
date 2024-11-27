@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<title>Cupcake Delights - Local</title>
+	<link rel="icon" type="image/png" href="imgs/cupcake_icon.jpg">
+	<style>
+		/* Fondo con imagen */
+		body {
+			background-image: url('imgs/fondo_cupcake.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		/* Colores temáticos */
+		.navbar {
+			background-color: #f8d7da; /* Color rosa pastel */
+		}
+		.navbar a.nav-link {
+			color: #721c24;
+		}
+		.navbar a.nav-link:hover {
+			color: #f08080;
+		}
+		h3, h4 {
+			color: #f08080;
+		}
+		footer {
+			background-color: #f8d7da;
+			padding: 20px;
+			color: #721c24;
+			text-align: center;
+		}
+		/* Estilo de las imágenes */
+		.img-sucursal {
+			width: 100%;
+			max-width: 550px;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease;
+		}
+
+		.img-sucursal:hover {
+			transform: scale(1.05);
+		}
+
+		/* Espaciado entre las columnas */
+		.row {
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- Navbar -->
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid">
+						<a href="#" class="navbar-brand">
+							<img src="imgs/cupcake_icon.jpg" class="d-inline-block align-text-top" alt="Logo" width="30" height="24">
+							Cupcake Delight
+					    </a>
+					    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      						<span class="navbar-toggler-icon"></span>
+   						</button>
+   						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+   							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item ms-3">
+									<a href="index.html" class="nav-link active" aria-current="page">Inicio</a>
+								</li>
+								<li class="nav-item ms-3">
+									<a href="menu.html" class="nav-link">Menú</a>
+								</li>
+								<li class="nav-item ms-3">
+									<a href="contactos.html" class="nav-link">Contacto</a>
+								</li>
+								<li class="nav-item ms-3">
+									<a href="local.html" class="nav-link">Local</a>
+								</li>
+                                <li class="nav-item dropdown ms-4">
+									<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+										Especialidades
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="cupcakes.html" class="dropdown-item">Cupcakes Gourmet</a></li>
+										<li><a href="sabores_y_precios.html" class="dropdown-item">Sabores y Precios</a></li>
+   									</ul>
+   								</li>
+							</ul>
+   						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Título Locales -->
+		<div class="row">
+			<div class="col text-center">
+				<h3>Local y horarios</h3>
+			</div>
+		</div>
+
+		<!-- Sucursal Santiago -->
+		<div class="row">
+			<div class="col">
+				<h4>Santiago</h4>
+				<p>Ubicación: Calle Principal #234, Santiago, Estado de México</p>
+				<p>Horario:<br>
+				Lunes - Viernes: 08:00 - 17:00 <br>
+				Sábado y Domingo: 11:00 - 21:00 
+				</p>
+				<p>Tipos de cupcakes:</p>
+				<ul>
+					<li>Vainilla</li>
+					<li>Chocolate</li>
+					<li>Red Velvet</li>
+					<li>Fresa</li>
+					<li>Limón</li>
+				</ul>
+				<hr>
+			</div>
+			<div class="col">
+				<img src="imgs/local1.jpg" alt="Sucursal Santiago" class="img-sucursal">
+			</div>
+		</div>
+
+		<!-- Sucursal Capula -->
+		<div class="row">
+			<div class="col">
+				<h4>Capula</h4>
+				<p>Ubicación: Calle 15 de Septiembre #789, Capula, Estado de México</p>
+				<p>Horario:<br>Lunes - Viernes: 08:00 - 17:00 <br>Sábado y Domingo: 11:00 - 21:00 </p>
+				<p>Tipos de cupcakes:</p>
+				<ul>
+					<li>Red Velvet</li>
+					<li>Fresa</li>
+					<li>Vainilla</li>
+					<li>Chocolate</li>
+					<li>Cookies and Cream</li>
+				</ul>
+				<hr>
+			</div>
+			<div class="col">
+				<img src="imgs/local3.jpg" alt="Sucursal Capula" class="img-sucursal">
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<p>Creador:<br>Cisneros Villegas Luisa.<br>© 2024</p>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
